@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scrolling-bg {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url("bg.gif") repeat 0 0;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px -400px; }
+}
+
+.center-container {
+    min-width: 800px;
+    width: 60vw;
+    min-height: 800px;
+    background: rgba(95, 95, 95, 0.9);
+    border: solid 2px white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-content {
+    overflow: auto;
+}
+
+.window-top {
+    width: 100%;
+    background: #444444;
+    line-height: 35px;
+    border-bottom: #333333 solid 1px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+.dot {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #FF6057;
+    border: 1px solid #E14640;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+}
+
+.dot:hover {
+    border-color:white;
+}
+
+.amber {
+    background: hsl(189, 89%, 46%);
+    border: 1px solid hsl(189, 89%, 46%);
+    left: 30px;
+}
+
+.green {
+    background: #27C93F;
+    border: 1px solid #1DAD2B;
+    left: 50px;
+}
+
+.navbar {
+    width: 100%;
+    background: #444444;
+    line-height: 20px;
+    border-bottom: #333333 solid 1px;
+    font-weight: normal;
+    font-size: small;
+}
+
+.button {
+    display: inline-block;
+    padding: 1px 15px;
+    background: #0e8499;
+    border-radius:8px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: 525;
+}
+
+.button:hover {
+    background: #0f4d58;
+}
+
+.selected {
+    background: #0dbede;;
+}
+
+.selected:hover {
+    background: #220dde;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+}
+
+p {
+    text-shadow: 2px 2px 2px black;
+    margin: 10px 20px;
+}
+
+.avatar {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 20%; 
+    border: solid 2px white; 
+    background: #444444;
+}
+
+.avatar:hover {
+    animation: shake 0.5s linear infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.socials img {
+    height: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.socials img:hover {
+    animation: shake 0.5s linear infinite;
+}
+
+/*
+     FILE ARCHIVED ON 02:15:36 Aug 14, 2023 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:07:35 Jan 21, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 68.071
+  exclusion.robots: 0.203
+  exclusion.robots.policy: 0.183
+  cdx.remote: 0.126
+  esindex: 0.018
+  LoadShardBlock: 40.662 (3)
+  PetaboxLoader3.datanode: 131.409 (5)
+  load_resource: 259.694 (2)
+  PetaboxLoader3.resolve: 90.204 (2)
+*/

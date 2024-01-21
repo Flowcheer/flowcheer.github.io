@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scrolling-bg {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background: url("../index_files/bg.gif") repeat 0 0;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px -400px; }
+}
+
+.center-container {
+    min-width: 800px;
+    width: 60vw;
+    min-height: 800px;
+    background: #5f5f5fe6;
+    border: solid 2px white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-content {
+    overflow: auto;
+}
+
+.window-top {
+    width: 100%;
+    background: #444444;
+    line-height: 35px;
+    border-bottom: #333333 solid 1px;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+.dot {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #FF6057;
+    border: 1px solid #E14640;
+    border-radius: 50%;
+    margin: 0 4px 0 0;
+}
+
+.dot:hover {
+    border-color:white;
+}
+
+.amber {
+    background: hsl(189, 89%, 46%);
+    border: 1px solid hsl(189, 89%, 46%);
+    left: 30px;
+}
+
+.green {
+    background: #27C93F;
+    border: 1px solid #1DAD2B;
+    left: 50px;
+}
+
+.navbar {
+    width: 100%;
+    background: #444444;
+    line-height: 20px;
+    border-bottom: #333333 solid 1px;
+    font-weight: normal;
+    font-size: small;
+}
+
+.button {
+    display: inline-block;
+    padding: 1px 15px;
+    background: #0e8499;
+    border-radius:8px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: 525;
+}
+
+.button:hover {
+    background: #0f4d58;
+}
+div.scroller {
+    margin: 4px, 4px;
+    padding: 4px;
+    width: 60vw;
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+.card {
+    background:#5f5f5fe6;
+    padding: 5px;
+    margin-top: 5px;
+    border: solid 2px white;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+}
+.fakeimg {
+    border-radius: 15px;
+    padding: 5px;
+}
+.selected {
+    background: #0dbede;;
+}
+
+.selected:hover {
+    background: #220dde;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: 2px 2px 2px black;
+    text-decoration: underline;
+}
+
+p {
+    text-shadow: 2px 2px 2px black;
+    margin: 10px 20px;
+}
+
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
