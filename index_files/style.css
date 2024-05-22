@@ -170,7 +170,7 @@ div.scroller {
     margin: 4px, 4px;
     padding: 4px;
     width: 60vw;
-    height: 800px;
+    height: 750px;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: justify;
